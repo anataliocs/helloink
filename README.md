@@ -1,5 +1,9 @@
 # helloink — ink! smart contract (Rust)
 
+<p align="center">
+  <a href="https://use.ink/docs/v6" target="blank"><img src="built-with-love-for-polkadot.svg" width="240" alt="Nest Logo" /></a>
+</p>
+
 ## Overview
 
 This repository contains a minimal ink! smart contract written in Rust. The contract stores a single boolean in on-chain
@@ -11,6 +15,39 @@ storage and provides:
 
 The contract is implemented in `lib.rs` using the `#[ink::contract]` macro and includes unit tests and optional
 end-to-end (E2E) tests using `ink_e2e`.
+
+## Quickstart
+
+**Build the contract:**
+
+```bash
+pop build --release
+```
+
+**Run the unit tests:**
+
+```bash
+pop test
+```
+
+**Deploy to local:**
+```bash
+pop up --path . \
+  --constructor new \
+  --args true \
+  --suri //Alice \
+  --url ws://localhost:9944
+```
+
+**Invoke deployed contract:**
+```bash
+ pop call contract --path . \
+ --contract 0x5801b439a678d9d3a68b8019da6a4abfa507de11 \
+ --message flip \
+ --url ws://localhost:9944/ \
+ --suri //Alice \
+ --execute
+```
 
 ## Tech stack
 
@@ -39,30 +76,7 @@ end-to-end (E2E) tests using `ink_e2e`.
         - `flip(&mut self)` — toggles `value`
         - `get(&self) -> bool` — reads `value`
 
-## Configuration
 
-`Cargo.toml` highlights:
-
-```toml
-[package]
-name = "helloink"
-edition = "2024"
-
-[dependencies]
-ink = { version = "6.0.0-beta.1", default-features = false, features = ["unstable-hostfn"] }
-
-[dev-dependencies]
-ink_e2e = { version = "6.0.0-beta.1" }
-
-[features]
-default = ["std"]
-std = ["ink/std"]
-ink-as-dependency = []
-e2e-tests = []
-
-[package.metadata.ink-lang]
-abi = "ink"
-```
 
 ## License
 

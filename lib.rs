@@ -52,7 +52,6 @@ mod helloink {
         }
     }
 
-
     /// This is how you'd write end-to-end (E2E) or integration tests for ink! contracts.
     ///
     /// When running these you need to make sure that you:
