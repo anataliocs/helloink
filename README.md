@@ -50,6 +50,20 @@ pop up --path . \
   --url ws://localhost:9944
 ```
 
+**Shut down the local node:**
+
+You can use this script
+
+```shell
+./scripts/shut-down-ink-node.sh
+```
+
+Or kill the process manually:
+
+```shell
+kill -9 $(lsof -i :9944)
+```
+
 **Invoke deployed contract:**
 
 - After deploying your contract, update the hash passed into the `--contract` flag below:
@@ -62,6 +76,18 @@ pop up --path . \
  --url ws://localhost:9944/ \
  --suri //Alice \
  --execute
+```
+
+**Read the Current Contract Storage Value**
+
+- After deploying your contract, update the hash passed into the `--contract` flag below:
+- This retrieves and displays the current state of the boolean storage variable
+
+```shell
+pop call contract --path . \
+--contract 0x124954f324ab6253b8efc74c3073a7e88338cda5 \
+--message value \
+--url ws://localhost:9944/
 ```
 
 ## Tech stack
