@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/rust:1.0.9-1
+FROM mcr.microsoft.com/devcontainers/rust:2.0.5-1
 
 ENV DEBIAN_FRONTEND=noninteractive \
     PKG_CONFIG_PATH='/usr/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/share/pkgconfig' \
@@ -9,7 +9,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     SCCACHE_DIRECT=true \
     RUSTC_WRAPPER=sccache \
     SCCACHE_CACHE_SIZE=5G \
-    RUST_VERSION=1.81
+    RUST_VERSION=1.85
 
 RUN apt-get update && apt-get install -y \
   libdbus-1-dev \
