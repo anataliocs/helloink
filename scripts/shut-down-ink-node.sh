@@ -1,23 +1,25 @@
 #!/bin/bash
 set -e
 
+port="9944"
+
 printf "\nKilling all local ink! node processes"
 printf "\n------------------------- \n"
 
-printf "\nThis script searches for ink node and eth rpc processes running on port 9944 and performs a kill 9 on each pid"
+printf "\nThis script searches for ink node and eth rpc processes running on port %s and performs a kill 9 on each pid" "$port"
 
 printf "\n------------------------- \n"
 
-printf "\nPrinting output from command: %s \n" "lsof -i :9944"
+printf "\nPrinting output from command: lsof -i :%s \n" "$port"
 
-lsof -i :9944
+lsof -i :$port
 
 #Getting ink! node process IDs and eth rpc v process IDs
 printf "\nExtracting ink-node process ids..."
 printf "\n------------------------- \n"
 
-ink_node_pids=$(lsof -i :9944 | grep -oE 'ink-node-\s[0-9]{4,5}' | sed 's/ink-node-[[:space:]]//g' | xargs echo -n)
-eth_rpc_v_pids=$(lsof -i :9944 | grep -oE 'eth-rpc-v\s[0-9]{4,5}' | sed 's/eth-rpc-v[[:space:]]//g' | xargs echo -n)
+ink_node_pids=$(lsof -i :$port | grep -oE 'ink-node-\s[0-9]{4,5}' | sed 's/ink-node-[[:space:]]//g' | xargs echo -n)
+eth_rpc_v_pids=$(lsof -i :$port | grep -oE 'eth-rpc-v\s[0-9]{4,5}' | sed 's/eth-rpc-v[[:space:]]//g' | xargs echo -n)
 
 printf "Found ink nodes running on the following process ids: %s \n" "$ink_node_pids"
 
