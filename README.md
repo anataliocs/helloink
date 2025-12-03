@@ -58,12 +58,6 @@ You can use this script
 ./scripts/shut-down-ink-node.sh
 ```
 
-Or kill the process manually:
-
-```shell
-kill -9 $(lsof -i :9944)
-```
-
 **Invoke deployed contract:**
 
 - After deploying your contract, update the hash passed into the `--contract` flag below:
