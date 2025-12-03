@@ -33,9 +33,8 @@
       "configureZshAsDefaultShell": true
     },
     "ghcr.io/devcontainers/features/rust:1.5.0": {
-      "targets": "wasm32v1-none",
       "profile": "default",
-      "version": "1.85"
+      "version": "1.91.1"
     },
     "ghcr.io/devcontainers-extra/features/gh-release:1.0.26": {
       "repo": "r0gue-io/pop-cli",

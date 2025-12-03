@@ -10,6 +10,12 @@
 
 ----
 
+<div style="text-align: center;" align="center"> 
+    <a href="https://codespaces.new/anataliocs/helloink">
+        <img alt="Open Github Codespace Devcontainer" src="https://github.com/codespaces/badge.svg">
+    </a>
+</div>
+
 ## Overview
 
 A minimal [ink!](https://use.ink/docs/v6) smart contract written in Rust. The contract stores a single boolean in
