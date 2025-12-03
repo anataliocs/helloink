@@ -72,9 +72,11 @@ pop up --path . \
 
 ## Requirements
 
+https://use.ink/docs/v6/getting-started/setup
+
 - Install Brew: https://brew.sh/
 - Install [Rust](https://rust-lang.org/tools/install/), [Cargo](https://doc.rust-lang.org/cargo/)
-  and [Pop CLI](https://github.com/r0gue-io/pop-cli): https://use.ink/docs/v6/getting-started/setup
+  and [Pop CLI](https://github.com/r0gue-io/pop-cli)
 
 ## Key Features
 
