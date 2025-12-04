@@ -5,7 +5,8 @@
 # helloink — ink! smart contract (Rust)
 
 <p align="center">
-  <a href="https://use.ink/docs/v6" target="blank"><img src="img/built-with-love-for-polkadot.svg" width="240" alt="Polkadot badge" /></a>
+  <a href="https://polkadot.com/developers/" target="blank"><img src="img/built-with-love-for-polkadot.svg" width="240" alt="Polkadot badge" /></a>
+  <a href="https://github.com/use-ink/ink" target="blank"><img src="https://raw.githubusercontent.com/use-ink/ink/master/.images/badge_flat.svg" height="27" alt="Polkadot badge" /></a>
 </p>
 
 <div style="text-align: center;" align="center"> 
@@ -123,4 +124,10 @@ pop call contract --path . \
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+----
+
+<p align="center">
+  <a href="https://github.com/use-ink/ink" target="blank"><img src="img/ink-squink.svg" width="120" alt="Polkadot badge" /></a>
+</p>
 
