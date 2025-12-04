@@ -8,13 +8,13 @@
   <a href="https://use.ink/docs/v6" target="blank"><img src="img/built-with-love-for-polkadot.svg" width="240" alt="Polkadot badge" /></a>
 </p>
 
-----
-
 <div style="text-align: center;" align="center"> 
     <a href="https://codespaces.new/anataliocs/helloink">
         <img alt="Open Github Codespace Devcontainer" src="https://github.com/codespaces/badge.svg">
     </a>
 </div>
+
+----
 
 ## Overview
 
@@ -28,6 +28,21 @@ storage and provides:
 
 The contract is implemented in `lib.rs` using the `#[ink::contract]` macro and includes unit tests and optional
 end-to-end (E2E) tests using `ink_e2e`.
+
+### Config
+
+The included `.devcontainer` config creates a GitHub codespace pre-installed with Rust, Cargo, and the Pop CLI so you
+can hit the ground running. Learn more
+about [Devcontainers](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers).
+
+Start up a [Github Codespace](https://codespaces.new/anataliocs/helloink) or perform the local
+config steps below:
+
+https://use.ink/docs/v6/getting-started/setup
+
+- Install Brew: https://brew.sh/
+- Install [Rust](https://rust-lang.org/tools/install/), [Cargo](https://doc.rust-lang.org/cargo/)
+  and [Pop CLI](https://github.com/r0gue-io/pop-cli)
 
 ## Quickstart
 
@@ -95,14 +110,6 @@ pop call contract --path . \
 - Rust (edition 2024)
 - **ink!** 6.0.0-beta.1
 - Cargo
-
-## Requirements
-
-https://use.ink/docs/v6/getting-started/setup
-
-- Install Brew: https://brew.sh/
-- Install [Rust](https://rust-lang.org/tools/install/), [Cargo](https://doc.rust-lang.org/cargo/)
-  and [Pop CLI](https://github.com/r0gue-io/pop-cli)
 
 ## Key Features
 
