@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://polkadot.com/developers/" target="blank"><img src="img/built-with-love-for-polkadot.svg" width="240" alt="Polkadot badge" /></a>
-  <a href="https://github.com/use-ink/ink" target="blank"><img src="https://raw.githubusercontent.com/use-ink/ink/master/.images/badge_flat.svg" height="27" alt="Polkadot badge" /></a>
+  <a href="https://github.com/use-ink/ink" target="blank"><img src="https://raw.githubusercontent.com/use-ink/ink/master/.images/badge_flat.svg" height="34" alt="Polkadot badge" /></a>
 </p>
 
 <div style="text-align: center;" align="center"> 
